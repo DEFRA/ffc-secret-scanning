@@ -19,10 +19,10 @@ node {
     def secretsFound = false
     try {
       secretsFound = secretScanner.scanFullHistory(
-        'github-auth-token', 
-        dockerImgName, 
-        params.githubUser, 
-        params.repoPrefix, 
+        'github-auth-token',
+        dockerImgName,
+        params.githubUser,
+        params.repoPrefix,
         excludeStrings,
         params.slackChannel)
     } finally {
