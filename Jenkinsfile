@@ -1,4 +1,4 @@
-@Library('defra-library@fix-secret-scanning') _
+@Library('defra-library@v-9') _
 node {
   git url: 'https://github.com/DEFRA/ffc-git-secret-scanning.git'
   def dockerImgName = "trufflehog"
